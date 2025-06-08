@@ -69,3 +69,32 @@
 //       print('lol');
 //   }
 // }
+
+// QUESTIONS :
+
+// QUESTIONS 1 : Calculate electricity bill
+/* 
+ Per unit cost varies from 20-40
+ if consumed unit is less than 100 then per unit cost is 20
+ if consumed unit is greater then 100 but less than 200 them per unit cost is 30
+ if consumed unit is greater then 300 then per unit cost is 40
+ else 50
+ */
+
+import 'dart:io';
+
+void main() {
+  stdout.write('Enter cosumed unit:');
+  int consumedUnit = int.parse(stdin.readLineSync()!);
+  int result;
+
+  if (consumedUnit < 100) {
+    print('less than $consumedUnit');
+    int result = consumedUnit * 20;
+    print('Your final price is $result 20');
+  } else if (consumedUnit > 100 && consumedUnit < 200) {
+    print('less than $consumedUnit');
+    int result = consumedUnit * 30;
+    print('Your final price is $result 30');
+  } else {}
+}

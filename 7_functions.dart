@@ -66,3 +66,12 @@
 // ***************  Expression in functions : Short hand syntax **************
 
 // void findPerimeter(int length, int breadth) => print(2 * (length + breadth));
+
+void main() {
+  number();
+}
+
+Future<void> number() async {
+  await Future.delayed(Duration(seconds: 3));
+  print('3');
+}
