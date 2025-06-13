@@ -120,6 +120,8 @@ class Car {
 
   void displayDetails() {
     print('Car is of brand: $brand and made in year: $year');
+    print('xyz');
   }
+
   //
 }
