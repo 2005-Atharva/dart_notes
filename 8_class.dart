@@ -108,20 +108,114 @@
 // Q3: Create a class Car with properties brand and year. Use a constructor to initialize them.
 //Add a method displayDetails() to print the brand and year.
 
+// void main() {
+//   Car car = Car('Tata', 2003);
+//   car.displayDetails();
+// }
+
+// class Car {
+//   String brand;
+//   int year;
+//   Car(this.brand, this.year);
+
+//   void displayDetails() {
+//     print('Car is of brand: $brand and made in year: $year');
+//     print('xyz');
+//   }
+
+//   //
+// }
+
+// Q4. Named Constructor
+// Create a class Car with:
+// brand, year as properties.
+// A normal constructor and a named constructor called Car.oldCar which assigns year as 2000 by default.
+// A function isVintage() that returns true if the car year is less than 2005.
+
+// void main() {
+//   Cars cars = Cars(brand: 'Honda', year: 1900);
+//   print(cars.brand);
+//   print(cars.year);
+//   print(cars.isVintage());
+// }
+
+// class Cars {
+//   final String brand;
+//   int year = 2000;
+//   Cars({required this.brand, required this.year});
+
+//   bool isVintage() {
+//     return year < 2005;
+//   }
+// }
+
+// @5. Optional Named Parameters
+// Write a function registerUser that takes:
+// required username
+// optional email and phone (named params)
+// Print all available details. If email or phone is missing, print Not Provided.
+
+// void main() {
+//   registerUser(username: 'Atharv');
+// }
+
+// void registerUser({required String username, String? email, int? phoneNo}) {
+//   print("Here are details $username $email $phoneNo");
+// }
+
+// Q6. Class With Method and Logic
+// Create a class BankAccount:
+// owner, balance
+// Function deposit(amount) to increase balance
+// Function withdraw(amount) to decrease balance only if balance is enough
+// Function display() to show account info
+
+// void main() {
+//   BankAccount bankAccount = BankAccount('Atharv', 1000);
+//   bankAccount.display();
+//   bankAccount.deposit(200);
+//   bankAccount.withdraw(800);
+// }
+
+// class BankAccount {
+//   String owner;
+//   int balance;
+//   BankAccount(this.owner, this.balance);
+
+//   void deposit(int amount) {
+//     print('Before $balance');
+//     balance = balance + amount;
+//     print('after $balance');
+//   }
+
+//   void withdraw(int amount) {
+//     print('Before $balance');
+//     balance = balance - amount;
+//     print('after $balance');
+//   }
+
+//   void display() {
+//     print('Available balance $balance');
+//   }
+// }
+
+// Q7. Constructor with Required Named Parameters
+// Make a class Pet with:
+// Required named parameters: name, type, age
+// A method describe() that prints: "<name> is a <type> and is <age> years old."
+
 void main() {
-  Car car = Car('Tata', 2003);
-  car.displayDetails();
+  Pet pet = Pet(name: 'Koko', type: 'German', age: 2);
+  pet.describe();
 }
 
-class Car {
-  String brand;
-  int year;
-  Car(this.brand, this.year);
+class Pet {
+  final String name;
+  final String type;
+  final int age;
+  Pet({required this.name, required this.type, required this.age});
 
-  void displayDetails() {
-    print('Car is of brand: $brand and made in year: $year');
-    print('xyz');
+  void describe() {
+    print("$name is a $type and is $age years old.");
   }
-
-  //
 }

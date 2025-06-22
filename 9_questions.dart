@@ -35,21 +35,19 @@
 
 // getter and setters
 
-void main() {
-  Name name = Name();
-  print(name.name2);
-  name.name09 = 'lol';
-  print(name.name2);
-}
+// void main() {
+//   Name name = Name();
+//   print(name.name2);
+//   name.name09 = 'lol';
+//   print(name.name2);
+// }
 
-class Name {
-  String _name = 'Atharv';
+// class Name {
+//   String _name = 'Atharv';
 
-  String get name2 => _name;
+//   String get name2 => _name;
 
-  set name09(String name3) => _name = name3;
-}
+//   set name09(String name3) => _name = name3;
+// }
 
-
-
-// 
+//
