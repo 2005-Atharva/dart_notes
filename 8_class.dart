@@ -204,18 +204,18 @@
 // Required named parameters: name, type, age
 // A method describe() that prints: "<name> is a <type> and is <age> years old."
 
-void main() {
-  Pet pet = Pet(name: 'Koko', type: 'German', age: 2);
-  pet.describe();
-}
+// void main() {
+//   Pet pet = Pet(name: 'Koko', type: 'German', age: 2);
+//   pet.describe();
+// }
 
-class Pet {
-  final String name;
-  final String type;
-  final int age;
-  Pet({required this.name, required this.type, required this.age});
+// class Pet {
+//   final String name;
+//   final String type;
+//   final int age;
+//   Pet({required this.name, required this.type, required this.age});
 
-  void describe() {
-    print("$name is a $type and is $age years old.");
-  }
-}
+//   void describe() {
+//     print("$name is a $type and is $age years old.");
+//   }
+// }
