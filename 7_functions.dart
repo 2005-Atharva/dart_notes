@@ -67,9 +67,9 @@
 
 // gpt **************************
 
-// ## ✅ Types of Function Parameters in Dart (Full Structure)
+//
 
-// ### 🔹 1. **Required Parameters**
+// 1. **Required Parameters**
 
 // #### A. **Required Positional**
 
@@ -78,9 +78,9 @@
 // void printDetails(String name, int age) {
 //   print("Name: $name, Age: $age");
 // }
-// printDetails("Atharva", 22); // ✅ Must follow order
+// printDetails("Atharva", 22); //
 
-// ✅ `name` and `age` are **required positional** parameters.
+//  `name` and `age` are **required positional** parameters.
 
 // #### B. **Required Named**
 
@@ -89,9 +89,9 @@
 // void printDetails({required String name, required int age}) {
 //   print("Name: $name, Age: $age");
 // }
-// printDetails(name: "Atharva", age: 22); // ✅ Must pass both by name
+// printDetails(name: "Atharva", age: 22);
 
-// ✅ `name` and `age` are **required named** parameters.
+//  `name` and `age` are **required named** parameters.
 
 // ### 🔹 2. **Optional Parameters**
 
@@ -104,11 +104,11 @@
 //   print("Hello $name");
 //   if (message != null) print(message);
 // }
-// greet("Atharva");               // ✅ OK, message is skipped
-// greet("Atharva", "Welcome!");   // ✅ OK, message given
+// greet("Atharva");
+// greet("Atharva", "Welcome!");
 // ```
 
-// ✅ `name` is required positional, `message` is optional positional.
+//  `name` is required positional, `message` is optional positional.
 
 // ---
 
@@ -120,11 +120,11 @@
 // void greet({String? name, int? age}) {
 //   print("Name: $name, Age: $age");
 // }
-// greet(name: "Atharva");    // ✅ OK
-// greet(age: 22);            // ✅ OK
+// greet(name: "Atharva");    //
+// greet(age: 22);            //
 // ```
 
-// ✅ Both are optional named parameters.
+//  Both are optional named parameters.
 
 // ---
 
@@ -136,29 +136,29 @@
 // void greet({String name = "Guest", int age = 18}) {
 //   print("Name: $name, Age: $age");
 // }
-// greet(); // ✅ uses default "Guest", 18
+// greet(); //  uses default "Guest", 18
 // ```
 
-// 🟢 If you want to use **default values**, it's **not required to use `default` keyword**, just assign using `=`.
+// If you want to use **default values**, it's **not required to use `default` keyword**, just assign using `=`.
 
 // ---
 
-// ## ✅ Recap with Your Style (Cleaned):
+// ##  Recap with Your Style (Cleaned):
 
-// > ### 🔹 1. Required Parameters
+// > ### 1. Required Parameters
 
 // * **Positional:** `void myFunc(String name, int age) {}`
 // * **Named:** `void myFunc({required String name, required int age}) {}`
 
-// > ### 🔹 2. Optional Parameters
+// > ###  2. Optional Parameters
 
 // * **Positional:** `void myFunc(String name, [String? age]) {}`
 
-//   * ✅ `name` is required positional
-//   * ✅ `age` is optional positional
+//   *  `name` is required positional
+//   *  `age` is optional positional
 // * **Named:** `void myFunc({String? name, int? age}) {}`
 
-//   * ✅ Both optional named
+//   *  Both optional named
 // * **Default:**
 
 // ```dart
@@ -167,7 +167,7 @@
 
 // ---
 
-// ✅ **Yes, your thought process is right** — just a few small corrections in explanation:
+// **Yes, your thought process is right** — just a few small corrections in explanation:
 
 // * No need to write `default` keyword — just use `=`.
 // * Required positional = just list them in order.

@@ -40,7 +40,7 @@
 //   // Therefore, their initial values is by default 'null'
 // }
 
-// QUESTION : Write a program to add two integres and store there in 3rd one
+// QUESTION 1: Write a program to add two integres and store there in 3rd one
 
 // void main() {
 //   int numberOne = 10;
@@ -53,7 +53,7 @@
 //   print(sumOfTwo);
 // }
 
-// QUESTION : Write a program to swap values of two variables
+// QUESTION 2: Write a program to swap values of two variables
 
 // void main() {
 //   int x = 10;
@@ -77,7 +77,7 @@
 //   print(y);
 // }
 
-// QUESTION : Write a program to convert days & week into year
+// QUESTION 3: Write a program to convert days & week into year
 
 // void main() {
 //   int days;
@@ -92,9 +92,9 @@
 //   print(yearss);
 // }
 
-// QUESTIONS: ON Dart base
+// QUESTIONS 4: ON Dart base
 
-// QUESTIONS 1 : sum of two number take from user
+// QUESTIONS 4 : sum of two number take from user
 // import 'dart:io';
 
 // void main() {
@@ -108,7 +108,7 @@
 //   print(result);
 // }
 
-// QUESTIONS 2 : convert feet into meter
+// QUESTIONS 5 : convert feet into meter
 // import 'dart:io';
 
 // void main() {

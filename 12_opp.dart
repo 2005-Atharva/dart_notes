@@ -1,5 +1,3 @@
-//
-
 void main() {
   // OOP types
   // 1. Polymorphism -> ability of a Object to take any forms.(method overriding )
