@@ -22,4 +22,5 @@ Future<String> getData() async {
 }
 
 
-// Streams -> nothing complex only the continuous flow of data 
+// Streams -> nothing complex only the continuous flow of data
+// its as simpler to the furture only used when we are sure about the flow of the data is continuous 
